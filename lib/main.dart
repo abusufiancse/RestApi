@@ -3,6 +3,7 @@ import 'package:learning_api/comments_api.dart';
 import 'package:learning_api/home_screen.dart';
 import 'package:learning_api/photo_api.dart';
 import 'package:learning_api/post_api.dart';
+import 'package:learning_api/product_api.dart';
 import 'package:learning_api/user_api.dart';
 
 void main() => runApp(const MyApp());
@@ -16,11 +17,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: HomePage.id,
       routes: {
-        HomePage.id: (context) => HomePage(),
+        HomePage.id: (context) => const HomePage(),
         PostApi.id: (context) => const PostApi(),
         PhotosApi.id: (context) => const PhotosApi(),
         CommentsApi.id: (context) => const CommentsApi(),
         UserApi.id: (context) => const UserApi(),
+        ProductApi.id: (context) => const ProductApi(),
       },
     );
   }
